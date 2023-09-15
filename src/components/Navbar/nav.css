@@ -1,0 +1,25 @@
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  background-color: rgb(117, 197, 42);
+  color: white;
+}
+.navBar Link {
+  text-decoration: none;
+}
+.navBar div .Option, .navBar div .ActiveOption {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  margin: 0 30px 0 30px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.navBar div .Option:hover, .navBar div .ActiveOption:hover {
+  background-color: rgb(87, 143, 35);
+}/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,28 @@
+.CardItem{
+    display: flex;
+    justify-content: center;
+}
+
+.Header{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ItemHeader{
+    display: flex;
+}
+picture{
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
