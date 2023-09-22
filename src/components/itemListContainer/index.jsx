@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getProductByCategory, getProducts } from "../../products.jsx";
 import ItemList from "../itemList";
+
 import { useParams } from "react-router-dom";
 
 export const ItemListContainer = ({greeting} ) => {
@@ -11,6 +12,7 @@ export const ItemListContainer = ({greeting} ) => {
     useEffect(() => {
 
         const asyncFunc = categoryId ? getProductByCategory : getProducts
+        
         asyncFunc(categoryId)
             .then(response => {
                 setProducts(response)

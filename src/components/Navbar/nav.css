@@ -1,4 +1,4 @@
-.navBar {
+.NavBar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -6,10 +6,10 @@
   background-color: rgb(117, 197, 42);
   color: white;
 }
-.navBar Link {
+.NavBar Link {
   text-decoration: none;
 }
-.navBar div .Option, .navBar div .ActiveOption {
+.NavBar .Categories .Option, .NavBar .Categories .ActiveOption {
   cursor: pointer;
   text-decoration: none;
   border: none;
@@ -20,6 +20,6 @@
   color: white;
   border-radius: 5px;
 }
-.navBar div .Option:hover, .navBar div .ActiveOption:hover {
+.NavBar .Categories .Option:hover, .NavBar .Categories .ActiveOption:hover {
   background-color: rgb(87, 143, 35);
 }/*# sourceMappingURL=nav.css.map */
