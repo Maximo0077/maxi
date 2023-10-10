@@ -10,6 +10,7 @@ export const CartProvider = ({ children }) => {
     console.log(cart)
 
     const addItem = (item, quantity) => {
+        console.log(cart)
         if(!isInCart(item.id)){
             setCart(prev => [...prev, {...item, quantity}])
         } else {
