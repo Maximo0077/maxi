@@ -1,8 +1,10 @@
 .cartBtn {
-  border: none;
-  background-color: transparent;
   cursor: pointer;
-  padding: 15px 10px 15px 15px;
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,9 +14,6 @@
   width: 30px;
   display: flex;
   position: relative;
-}
-.cartBtn div span {
-  color: white;
 }
 .cartBtn div p {
   position: absolute;
