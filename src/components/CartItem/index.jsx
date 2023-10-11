@@ -1,3 +1,4 @@
+import './cartItem.css'
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
@@ -6,6 +7,7 @@ export const CartItem = () => {
   
 
   const renderCartItem = (item) => (
+    
     <article className="cartList" key={item.id}>
       <h2>{item.name}</h2>
       <aside className="cartInfo">

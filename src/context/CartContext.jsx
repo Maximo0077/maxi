@@ -29,8 +29,17 @@ export const CartProvider = ({ children }) => {
         return cart.some (prod => prod.id === itemId)
     }
 
+    const getTotalPrice = () => {
+        let total = 0
+        for (let index = 0; index < cart.length; index++) {
+            total += cart[index].price * cart[index].quantity
+        }
+        
+        return total
+    }
+
     return (
-        <CartContext.Provider value={{cart ,addItem, removeItem, clearCart}} >
+        <CartContext.Provider value={{cart ,addItem, removeItem, clearCart, getTotalPrice}} >
             { children }
         </CartContext.Provider>
     )

@@ -15,8 +15,6 @@ const ItemDetailContainer = () =>{
         setLoading(true)
         const q = query(collection(db, 'products'), where("id", "==", id))
 
-        console.log(q)
-
         getDocs(q)
             .then(response => {
                 response.docs.map(doc => {

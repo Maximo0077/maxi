@@ -6,7 +6,7 @@ import { CartItem } from '../CartItem'
 
 
 export const Cart = () => {
-    const { clearCart, totalQuantity, total} = useContext (CartContext)
+    const { clearCart, totalQuantity, getTotalPrice} = useContext (CartContext)
 
     if(totalQuantity === 0){
         return(
@@ -17,12 +17,18 @@ export const Cart = () => {
         )
     }
 
+    
+
+
     return(
         <div>
             <CartItem/>
-            <h3>Total: ${total}</h3>
-            <button onClick={() => clearCart() } className='Button' >Limpiar Carrito</button>
-            <Link to='/checkout' className='Option' >Checkout</Link>
+            <div className='CartCart' >
+                <h3>Total: ${getTotalPrice()}</h3>
+                <button onClick={() => clearCart() } className='Button' >Limpiar Carrito</button>
+                <Link to='/checkout' className='Option' >Checkout</Link>
+            </div>
+            
         </div>
     )
 }
