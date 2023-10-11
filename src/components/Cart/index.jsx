@@ -6,7 +6,7 @@ import { CartItem } from '../CartItem'
 
 
 export const Cart = () => {
-    const { cart, clearCart, totalQuantity, total} = useContext (CartContext)
+    const { clearCart, totalQuantity, total} = useContext (CartContext)
 
     if(totalQuantity === 0){
         return(
