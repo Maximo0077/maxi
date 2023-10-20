@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
 
     return (
         <AppBar sx={{ backgroundColor: "#33082E" }}>

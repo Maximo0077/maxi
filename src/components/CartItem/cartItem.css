@@ -1,0 +1,17 @@
+.cartList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cartList h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cartList .cartInfo {
+    display: flex;
+    align-items: center;
+  }
+  .cartList .cartInfo .info {
+    margin: 10px;
+  }/*# sourceMappingURL=cartItem.css.map */

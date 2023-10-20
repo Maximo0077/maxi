@@ -1,0 +1,38 @@
+$green: rgb(117, 197, 42);
+$darkgreen: rgb(87, 143, 35);
+
+.cartBtn{
+    cursor: pointer;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 30%;
+    color: wheat;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        display: flex;
+        position: relative;
+        width: 25px;
+
+        
+
+
+        p{
+            bottom: 10px;
+            right: 5px;
+            position: absolute;
+            color: yellow;
+            font-weight: 900;
+        }
+    }
+    &:hover{
+        background-color: $darkgreen;
+    }
+}
+
+
+

@@ -1,0 +1,27 @@
+.cartBtn {
+    cursor: pointer;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .cartBtn div {
+    width: 30px;
+    display: flex;
+    position: relative;
+  }
+  .cartBtn div p {
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    color: red;
+    font-weight: 900;
+  }
+  .cartBtn:hover {
+    background-color: rgb(97, 168, 30);
+  }/*# sourceMappingURL=cartWidget.css.map */
