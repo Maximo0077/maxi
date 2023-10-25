@@ -4,7 +4,7 @@ import { ItemListContainer } from './components/itemListContainer';
 import './App.jsx'
 import ItemDetailContainer from './components/itemDetailContainer';
 import { CartProvider } from './context/CartContext';
-import { Cart } from './components/Cart';
+import { Cart } from './components/cart';
 
 
 
