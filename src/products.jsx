@@ -1,71 +1,65 @@
-import acer from './assets/img/acer.webp';
-import asus from './assets/img/asusrog.webp';
-import iphone from './assets/img/iphone13.jpg';
-import mac from './assets/img/macbook.webp';
-import redmi from './assets/img/redmi.jpg';
-import samsung from './assets/img/smart-tv.webp';
+import guia1 from './assets/img/guia1.jpg';
+import guia2 from './assets/img/guia2.png';
+import guia3 from './assets/img/guia3.jpg';
+import libro1 from './assets/img/libro1.jpg';
+import libro2 from './assets/img/libro2.jpg';
+import libro3 from './assets/img/libro3.jpg';
 
 
 const products = [
     {
       id:1,
-      img: acer,
-      name: 'Laptop Acer XYZ',
-      description: 'Potente laptop para tareas exigentes.',
-      price: 240999,
-      category:'Laptop',
-      stock: 10,
-      details: 'Detalles de la laptop Acer XYZ es una potente laptop de trabajo donde tambien podrás jugar algunos juegos básicos, usar aplicaciones de Adobe y demás mientras no sea muy demandante.'
+      img: guia1 ,
+      name: 'Guia educativa 1',
+      description: 'Motivacion, autosuperacion',
+      category:'Psicologia',
+      price: 6500,
+      stock: 30,
     },
     {
       id:2,
-      img: asus,
-      name: 'Laptop Asus Rog Strix Ryzen 7 5800u + RTX 3080',
-      description: 'Potente laptop para Gaming.',
-      price: 689999,
-      category:'Laptop',
-      stock: 5,
-      details: 'Una potente notebook gamer. Jugá donde quieras, stremeá, trabajá por varios años.'
+      img: guia2 ,
+      name: 'Guia educativa 2',
+      description: 'Motivacion, autosuperacion',
+      category:'Psicologia',
+      price: 6500,
+      stock: 30,
     },
     {
       id:3,
-      img: mac,
-      name: 'Macbook Pro M1',
-      description: 'Potente laptop para diseño.',
-      price: 899999,
-      category:'Laptop',
-      stock: 16,
-      details: 'Una laptop apple, especial para diseñadores y creadores de contenido que busquen un estilo mas reservado y un sistema operativo mas agradable para este tipo de trabajo.'
+      img: guia3 ,
+      name: 'Guia educativa 3',
+      description: 'Motivacion, autosuperacion',
+      category:'Psicologia',
+      price: 6500,
+      stock: 35,
     },
     {
       id:4,
-      img: iphone,
-      name: 'iPhone 13 Pro Max',
-      description: 'El último smartphone de Apple con cámara avanzada.',
-      price: 799999,
-      category:'Phone',
-      stock: 3,
-      details: 'Telefono para presumir buena economía, pero sin mayores prestaciones que la competencia.'
+      img: libro1 ,
+      name: 'Libro digital 1',
+      description: 'Educacion  financiera digital',
+      category:'Economia',
+      price: 10500,
+      stock: 18,
     },
     {
       id:5,
-      img: redmi,
-      name: 'Redmi Note 13 Pro 5G 6GB',
-      description: 'Smartphone de Xiaomi',
-      price: 299999,
-      category:'Phone',
-      stock: 15,
-      details: 'Grán teléfono, tiene todas las prestaciones que necesitas, una cámara de 50 MPX, 256GB de almacenamiento, una batería de 5100mAh, pero con algunos bugs.'
+      img: libro2 ,
+      name: 'Libro digital 2',
+      description: 'Educacion  financiera digital',
+      category:'Economia',
+      price: 9500,
+      stock: 18,
     },
     {
       id:6,
-      img: samsung,
-      name: 'Smart TV Samsung 85"',
-      description: 'Pantalla grande con calidad de imagen 8K.',
-      price: 699999,
-      category:'TV',
-      stock: 3,
-      details: 'TV Super Ultra HD para ver en extrema resolucion la gota de transpiracion de tu jugador favorito de fútbol.'
+      img: libro3 ,
+      name: 'Libro digital 3',
+      description: 'Educacion financiera digital',
+      category:'Economia',
+      price: 11500,
+      stock: 19,
     },
   ];
   

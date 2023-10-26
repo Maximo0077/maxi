@@ -8,13 +8,12 @@ export const NavBar = () =>{
     return(
         <nav className="NavBar">
             <Link to='/' >
-                <h3>Ecommerce</h3>
+                <h3>Bibloteca Digital</h3>
             </Link>
             
             <div className="Categories" >
-                <NavLink to={`/category/Phone`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' } >Celulares</NavLink>
-                <NavLink to={`/category/Laptop`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' } >Laptops</NavLink>
-                <NavLink to={`/category/TV`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' } >Televisores</NavLink>
+                <NavLink to={`/category/Economia`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' } >lIBROS</NavLink>
+                <NavLink to={`/category/Psicologia`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option' } >GUIAS</NavLink>
             </div>
             <CartWidget/>
         </nav>

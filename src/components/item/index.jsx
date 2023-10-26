@@ -26,3 +26,4 @@ export const Item =({id, name, img, price, stock}) =>{
         </article>
     )
 }
+

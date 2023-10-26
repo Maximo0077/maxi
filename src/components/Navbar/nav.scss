@@ -1,12 +1,9 @@
-$green: rgb(117, 197, 42);
-$darkgreen: rgb(87, 143, 35);
-
 .NavBar{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 0 10px 0;
-    background-color: $green;
+    background-color: red;
     color: white;
 
     Link{
@@ -26,7 +23,7 @@ $darkgreen: rgb(87, 143, 35);
             border-radius: 5px;
 
             &:hover{
-                background-color: $darkgreen;
+                background-color: red;
             }
         }
     }

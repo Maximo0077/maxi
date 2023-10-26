@@ -5,6 +5,7 @@ import './App.css'
 import ItemDetailContainer from './components/itemDetailContainer';
 import { CartProvider } from './context/CartContext';
 import { Cart } from './components/Cart';
+import { db } from "./services/firebase";
 
 
 
