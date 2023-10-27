@@ -9,11 +9,13 @@
   width: 300px;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: rgb(0, 0, 0);
+  color: white;
   margin: 10px;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+  transform: 1s;
 }
 .ListGroup .CardItem picture .ItemImg {
   width: 250px;

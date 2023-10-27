@@ -1,12 +1,14 @@
 .CardItem{
     display: flex;
     justify-content: center;
+    transition: 1s,
 }
 
 .Header{
     padding: 10px;
-    border-radius: 10px;
-    background-color: aquamarine;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
     margin: 10px;
     display: flex;
     flex-direction: column;

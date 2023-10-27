@@ -12,27 +12,27 @@ export const ItemListContainer = ({greeting} ) => {
 
     useEffect(() => {
         setLoading(true)
-        const q = query(collection(db, 'productos'), where("id", "==", id))
-
-        getDocs(q)
-            .then(response => {
-                response.docs.map(doc => {
-                    const data = doc.data()
-                    if(data.id == id) {
-                        setProduct({ id: doc.id, ...data })
-                    }   
-                })
-                
-            })
-            .catch(error => {
-                console.log(error)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
-
-    }, [id])
-
+        
+        const productosRef = categoryId
+        ? query(collection(db, 'productos'), where('category', '==', categoryId) )
+        : collection(db, 'productos')
+        
+        getDocs(productosRef)
+        .then(response => {
+        const productsAdapted = response.docs.map(doc => {
+        const data = doc.data()
+        return { id: doc.id, ...data }
+        })
+        setProducts(productsAdapted)
+        })
+        .catch(error => {
+        console.log(error)
+        })
+        .finally(() => {
+        setLoading(false)
+        })
+        }, [ categoryId ])
+        
     return(
         <div>
             <h1>

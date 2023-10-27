@@ -28,7 +28,7 @@ export const ItemDetail = ({ id, name, img, category, description, price, stock}
                     {name}
                 </h2>
                 <picture>
-                    <img src={img} alt={name} className='ItemImg'/>
+                    <img src={'../img/'+img} alt={name} className='ItemImg'/>
                 </picture>
                 <section>
                     <p className="Info">

@@ -27,7 +27,7 @@ const products = [
     },
     {
       id:3,
-      img: guia3 ,
+      img: guia3,
       name: 'Guia educativa 3',
       description: 'Motivacion, autosuperacion',
       category:'Psicologia',
@@ -54,7 +54,7 @@ const products = [
     },
     {
       id:6,
-      img: libro3 ,
+      img: libro3,
       name: 'Libro digital 3',
       description: 'Educacion financiera digital',
       category:'Economia',

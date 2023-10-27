@@ -1,7 +1,7 @@
 import './itemDetailContainer.css'
 import { useState, useEffect } from 'react'
 import { ItemDetail } from '../itemDetail'
-import { getDocs, query, collection, where } from 'firebase/firestore'
+import { getDoc, doc } from 'firebase/firestore'
 import { db } from '../../services/firebase'
 import { useParams } from 'react-router-dom'
 
@@ -13,16 +13,19 @@ const ItemDetailContainer = () =>{
 
     useEffect(() => {
         setLoading(true)
-        const q = query(collection(db, 'products'), where("id", "==", id))
+        const q = doc(db, 'productos', id)
 
-        getDocs(q)
+        getDoc(q)
             .then(response => {
-                response.docs.map(doc => {
-                    const data = doc.data()
-                    if(data.id == id) {
-                        setProduct({ id: doc.id, ...data })
-                    }   
-                })
+                  const data = response.data()
+                  if(data){
+                    setProduct({ id: response.id, ...data })
+                  }else{
+                    console.log('Item no existe')
+                  }
+                       
+                    
+                
                 
             })
             .catch(error => {
