@@ -1,7 +1,6 @@
 .CardItem{
     display: flex;
     justify-content: center;
-    transition: 1s,
 }
 
 .Header{

@@ -6,6 +6,8 @@ import ItemDetailContainer from './components/itemDetailContainer';
 import { CartProvider } from './context/CartContext';
 import { Cart } from './components/Cart';
 import { db } from "./services/firebase";
+import CheckoutForm from './components/CheckoutForm';
+
 
 
 
@@ -25,6 +27,7 @@ function App () {
             <Route path='/item/:id' element ={<ItemDetailContainer />} />
             <Route path='/cart' element={< Cart />} />
             <Route path='*' element ={ <h1>404 NOT FOUND</h1> } />
+            <Route path='/checkout' element={<CheckoutForm />} />
           </Routes>
         </CartProvider>
       </BrowserRouter>

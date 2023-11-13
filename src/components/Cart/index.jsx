@@ -26,7 +26,7 @@ export const Cart = () => {
             <div className='CartCart' >
                 <h3>Total: ${getTotalPrice()}</h3>
                 <button onClick={() => clearCart() } className='Button' >Limpiar Carrito</button>
-                <Link to='/checkout' className='Option' >Checkout</Link>
+                <Link to='/checkout'>Finalizar compra</Link>
             </div>
             
         </div>
